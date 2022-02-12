@@ -44,10 +44,10 @@ function main() {
     /*Q14*/[[],[],[]]
   ];
 
-  /* ------------------------------------ Halls ---------------------------------------- */
-  var halls = ['Amateur', 'Proficient', 'Expert', 'Environmentalist'];
+  /* ------------------------------------ Levels ---------------------------------------- */
+  var levels = ['Amateur', 'Proficient', 'Expert', 'Environmentalist'];
   /*               0         1             2               3        */
-  var hallCounts = new Array(halls.length).fill(0);
+  var levelCounts = new Array(levels.length).fill(0);
 
   /* ------------------------------ Question information ------------------------------ */
   //This creates an array of the number of answer choices in each question for later loops
@@ -151,10 +151,13 @@ function main() {
     else{
       var audio = new Audio('audio/cartoon_success_fanfair.mp3');
       audio.play();
-      var girlhalls = halls.slice(0,10);
-      var guyhalls = halls.slice(10,19);
-      var girlScores = hallCounts.slice(0,10);
-      var guyScores = hallCounts.slice(10,19);
+      var ama_level = levels.find(0);
+      var pro_level = levels.find(1);
+      var exp_level = levels.find(2);
+      var env_level = levels.find(3);
+      var guyhalls = levels.slice(10,19);
+      var girlScores = levelCounts.slice(0,10);
+      var guyScores = levelCounts.slice(10,19);
       var maxGirlScore = Math.max(...girlScores);
       var maxGuyScore = Math.max(...guyScores);
       var girlHallsMatch = new Array();

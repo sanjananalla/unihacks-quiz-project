@@ -181,7 +181,7 @@ function main() {
           guyHallsMatch.push(guyhalls[i]);
         }
       };  */
-      swal(`You are a:`, ` ${levelMatch.join(', ')} \r\n Look at the page called _______ to find tips on how to become more sustainable based on your current lifestyle. `);
+      swal(`You are a:`, ` ${levelMatch.join(', ')} \r\n Look at the page called _______ to find tips on how to become more sustainable based on your current lifestyle.`);
     };
   };
 };

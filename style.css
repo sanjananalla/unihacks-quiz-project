@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+/* ----------------------------------------------------------------- */
+/*                        Body styling                               */
+/* ----------------------------------------------------------------- */
 body{
-  background-image: repeating-linear-gradient(#A2B0FF, #F69096, #F9B998, #A2B0FF);
+  background-image: repeating-linear-gradient(#AFE1AF, #5F9EA0	, #088F8F	, #097969, #AFE1AF);
   background-size: cover;
   margin: 0;
   text-align: center;

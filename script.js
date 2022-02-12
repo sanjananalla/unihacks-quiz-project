@@ -151,12 +151,21 @@ function main() {
     else{
       var audio = new Audio('audio/cartoon_success_fanfair.mp3');
       audio.play();
-      var ama_level = levels.find(0);
+      vars dif_levels = levels.slice(0,3);
+      /*var ama_level = levels.find(0);
       var pro_level = levels.find(1);
       var exp_level = levels.find(2);
-      var env_level = levels.find(3);
-      var guyhalls = levels.slice(10,19);
-      var girlScores = levelCounts.slice(0,10);
+      var env_level = levels.find(3);*/
+      var levelScores = levelCounts.slice(0,3);
+      var maxLevel = Math.max(...levelScores);
+      var levelMatch = new Array();
+      for (i=0;i<levelScores.length;i++){
+        if (levelScores[i]==maxLevel){
+          levelMatch.push(dif_levels[i]);
+        };
+      };
+
+      /* var girlScores = levelCounts.slice(0,10);
       var guyScores = levelCounts.slice(10,19);
       var maxGirlScore = Math.max(...girlScores);
       var maxGuyScore = Math.max(...guyScores);
@@ -171,8 +180,8 @@ function main() {
         if (guyScores[i]==maxGuyScore){
           guyHallsMatch.push(guyhalls[i]);
         }
-      };
-      swal(`You would fit on:`, `Girl Halls: ${girlHallsMatch.join(', ')} \r\n Guy Halls: ${guyHallsMatch.join(', ')}`);
+      };  */
+      swal(`You are a:`, ` ${levelMatch.join(', ')} \r\n Look at the page called _______ to find tips on how to become more sustainable based on your current lifestyle. `);
     };
   };
 };

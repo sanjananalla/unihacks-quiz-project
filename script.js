@@ -132,7 +132,7 @@ function main() {
         if (dots[i][j].checked){
           numChecked++;
           for (k=0;k<answerValues[i][j].length;k++){
-            hallCounts[answerValues[i][j][k]]++;
+            levelCounts[answerValues[i][j][k]]++;
           };
         };
       };

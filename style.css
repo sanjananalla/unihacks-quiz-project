@@ -165,7 +165,7 @@ h2{
   border: solid #AFE1AF 2pt;
   border-radius: 10pt;
   display: inline-block;
-  width: min(26vw, 300px);
+  width: min(26vw, 335px);
   height: 750px;
   flex-direction: column;
   /* display: table-cell; */

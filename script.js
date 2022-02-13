@@ -165,23 +165,6 @@ function main() {
         };
       };
 
-      /* var girlScores = levelCounts.slice(0,10);
-      var guyScores = levelCounts.slice(10,19);
-      var maxGirlScore = Math.max(...girlScores);
-      var maxGuyScore = Math.max(...guyScores);
-      var girlHallsMatch = new Array();
-      var guyHallsMatch = new Array();
-      for (i=0;i<girlScores.length;i++){
-        if (girlScores[i]==maxGirlScore){
-          girlHallsMatch.push(girlhalls[i]);
-        };
-      };
-      for (i=0;i<guyScores.length;i++){
-        if (guyScores[i]==maxGuyScore){
-          guyHallsMatch.push(guyhalls[i]);
-        }
-      };  */
       swal(`You are a:`, ` ${levelMatch.join(', ')} \r\n Look at the page called _______ to find tips on how to become more sustainable based on your current lifestyle.`);
     };
   };
-};

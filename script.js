@@ -108,7 +108,8 @@ function main() {
   // Function that intakes the question number and answer number to highlight the correct answer and choose the button
   function select(question, answer){
     a[question][answer].classList.add('selected');
-    dots[question][answer].checked = true;
+    console.log({question, answer})
+    dots[question][answer] = true;
     for (i=0;i<arrayOfAnsChoices[question];i++){
       if (i!=answer){
         a[question][i].classList.remove('selected');
@@ -126,10 +127,13 @@ function main() {
 
   // Creates a function to loop through every answer on the page, check if the radio input is checked, and add one point to each hall that is chosen
   function calcResults(){
+    console.log("blahblah")
     var numChecked = 0;
+    console.log("dots checking")
+    console.table(dots)
     for (i=0;i<answerValues.length;i++){
       for (j=0;j<arrayOfAnsChoices[i];j++){
-        if (dots[i][j].checked){
+        if (dots[i][j]){
           numChecked++;
           for (k=0;k<answerValues[i][j].length;k++){
             levelCounts[answerValues[i][j][k]]++;
@@ -151,7 +155,7 @@ function main() {
     else{
       var audio = new Audio('audio/cartoon_success_fanfair.mp3');
       audio.play();
-      vars dif_levels = levels.slice(0,3);
+      var dif_levels = levels.slice(0,3);
       /*var ama_level = levels.find(0);
       var pro_level = levels.find(1);
       var exp_level = levels.find(2);
@@ -168,3 +172,4 @@ function main() {
       swal(`You are a:`, ` ${levelMatch.join(', ')} \r\n Look at the page called _______ to find tips on how to become more sustainable based on your current lifestyle.`);
     };
   };
+};

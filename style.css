@@ -53,10 +53,10 @@ header>h1{
   padding: .5vw;
   font-weight: bolder;
   border-radius: 5pt;
-  border: solid #A2B0FF 2px;
+  border: solid #AFE1AF 2px;
 }
 .pagelink:hover{
-  border: solid #F69096 2px;
+  border: solid #5F9EA0 2px;
   transition: linear .2s;
 }
 .pagelink>p{
@@ -65,14 +65,14 @@ header>h1{
 }
 a>img{
   border-radius: 8pt;
-  border: solid #A2B0FF 2pt;
+  border: solid #AFE1AF 2pt;
   display: inline-block;
   margin-right: 1em;
   height: min(6vw, 60px);
   float: right;
 }
 a>img:hover{
-  border: solid #F69096 2pt;
+  border: solid #5F9EA0 2pt;
   transition: linear .2s;
 }
 #header{
